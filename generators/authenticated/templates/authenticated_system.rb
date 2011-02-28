@@ -13,6 +13,7 @@ module AuthenticatedSystem
     end
 
     # Store the given <%= file_name %> id in the session.
+    #   note that any call within the class to use "current_user = <a user object>" has to be done using "self.current_user = <a user object>"
     def current_<%= file_name %>=(new_<%= file_name %>)
       session[:<%= file_name %>_id] = new_<%= file_name %> ? new_<%= file_name %>.id : nil
       @current_<%= file_name %> = new_<%= file_name %> || false
@@ -119,8 +120,10 @@ module AuthenticatedSystem
     # Logout
     #
 
-    # Called from #current_<%= file_name %>.  Finaly, attempt to login by an expiring token in the cookie.
+    # Called from #current_<%= file_name %>.  Finally, attempt to login by an expiring token in the cookie.
     # for the paranoid: we _should_ be storing <%= file_name %>_token = hash(cookie_token, request IP)
+    # but note for some users, they use proxy to connect to the Internet inside a company, and the IP address may
+    # change if a user connects through one proxy at first and then another proxy later on
     def login_from_cookie
       <%= file_name %> = !cookies[:auth_token].blank? && <%= class_name %>.find_by_remember_token(cookies[:auth_token])
       if <%= file_name %> && <%= file_name %>.remember_token?
