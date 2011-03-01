@@ -16,7 +16,7 @@ module AuthenticatedSystem
     end
 
     # Store the given <%= file_name %> id in the session.
-    #   note that any call within the class to use "current_user = <a user object>" has to be done using "self.current_user = <a user object>"
+    #   note that any call within the class to use "current_<%= file_name %> = <a <%= file_name %> object>" has to be done using "self.current_<%= file_name %> = <a <%= file_name %> object>"
     def current_<%= file_name %>=(new_<%= file_name %>)
       session[:<%= file_name %>_id] = new_<%= file_name %> ? new_<%= file_name %>.id : nil
       @current_<%= file_name %> = new_<%= file_name %> || false
