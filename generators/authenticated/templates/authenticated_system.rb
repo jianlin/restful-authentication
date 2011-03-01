@@ -6,8 +6,11 @@ module AuthenticatedSystem
       !!current_<%= file_name %>
     end
 
-    # Accesses the current <%= file_name %> from the session.
-    # Future calls avoid the database because nil is not equal to false.
+    # Returns the current logged in <%= file_name %>.  Note that it is a <%= file_name %> object if there is a logged in <%= file_name %>
+    # Return nil if there is no current logged in user.  (regardless @current_<%= file_name %> may be false, current_<%= file_name %> returns nil)
+    # 
+    # Note that any call to get the current logged in user should use current_<%= file_name %>, and never use @current_<%= file_name %>
+    # When @current_<%= file_name %> is set to false, it will avoid any trip to the DB 
     def current_<%= file_name %>
       @current_<%= file_name %> ||= (login_from_session || login_from_basic_auth || login_from_cookie) unless @current_<%= file_name %> == false
     end
