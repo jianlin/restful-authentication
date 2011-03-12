@@ -3,10 +3,15 @@
 This widely-used plugin provides a foundation for securely managing user
 authentication:
 * Login / logout
+
 * Secure password handling
+
 * Account activation by validating email
+
 * Account approval / disabling by admin
+
 * Rudimentary hooks for authorization and access control.
+
 
 Several features were updated in May, 2008.
 * "Stable newer version":http://github.com/technoweenie/restful-authentication/tree/master
