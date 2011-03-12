@@ -25,6 +25,7 @@ Several features were updated in May, 2008.
 ## Issue Tracker
 
 Please submit any bugs or annoyances on the lighthouse tracker at
+
 * "http://rails_security.lighthouseapp.com/projects/15332-restful_authentication/overview":http://rails_security.lighthouseapp.com/projects/15332-restful_authentication/overview
 
 For anything simple enough, please github message both maintainers: Rick Olson
