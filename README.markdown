@@ -2,14 +2,11 @@
 
 This widely-used plugin provides a foundation for securely managing user
 authentication:
+
 * Login / logout
-
 * Secure password handling
-
 * Account activation by validating email
-
 * Account approval / disabling by admin
-
 * Rudimentary hooks for authorization and access control.
 
 
