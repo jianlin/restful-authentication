@@ -119,13 +119,13 @@ acts as authenticated.  Currently it requires Rails 1.2.6 or above.
 
 To use the generator:
 
-  ./script/generate authenticated user sessions \
-    --include-activation \
-    --stateful \
-    --rspec \
-    --skip-migration \
-    --skip-routes \
-    --old-passwords
+    ./script/generate authenticated user sessions \
+      --include-activation \
+      --stateful \
+      --rspec \
+      --skip-migration \
+      --skip-routes \
+      --old-passwords
 
 * The first parameter specifies the model that gets created in signup (typically
   a user or account model).  A model with migration is created, as well as a
