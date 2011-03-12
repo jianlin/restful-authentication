@@ -32,8 +32,11 @@ For anything simple enough, please github message both maintainers: Rick Olson
 ## Documentation
 
 This page has notes on
+
 * "Installation":#INSTALL
+
 * "New Features":#AWESOME
+
 * "After installing":#POST-INSTALL
 
 See the "wiki":http://github.com/technoweenie/restful-authentication/wikis/home
