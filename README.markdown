@@ -121,9 +121,9 @@ acts as authenticated.  Currently it requires Rails 1.2.6 or above.
 
 **IMPORTANT FOR RAILS > 2.1 USERS** To avoid a @NameError@ exception ("lighthouse tracker ticket":http://rails_security.lighthouseapp.com/projects/15332-restful_authentication/tickets/2-not-a-valid-constant-name-errors#ticket-2-2), check out the code to have an _underscore_ and not _dash_ in its name:
 
-1. either use    git clone git://github.com/technoweenie/restful-authentication.git restful_authentication
+* either use `git clone git://github.com/technoweenie/restful-authentication.git vendor/plugins/restful_authentication`
 
-2. or rename the plugin's directory to be <code>restful_authentication</code> after fetching it.
+* or rename the plugin's directory to be <code>restful_authentication</code> after fetching it.
 
 To use the generator:
 
