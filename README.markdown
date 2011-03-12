@@ -123,7 +123,7 @@ acts as authenticated.  Currently it requires Rails 1.2.6 or above.
 
 * either use `git clone git://github.com/technoweenie/restful-authentication.git vendor/plugins/restful_authentication`
 
-* or rename the plugin's directory to be <code>restful_authentication</code> after fetching it.
+* or first use `script/plugin install git://github.com/technoweenie/restful-authentication.git` and then rename the plugin's directory to be restful_authentication` after fetching it.
 
 To use the generator:
 
