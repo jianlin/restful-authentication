@@ -11,9 +11,13 @@ authentication:
 
 
 Several features were updated in May, 2008.
+
 * "Stable newer version":http://github.com/technoweenie/restful-authentication/tree/master
+
 * "'Classic' (backward-compatible) version":http://github.com/technoweenie/restful-authentication/tree/classic
+
 * "Experimental version":http://github.com/technoweenie/restful-authentication/tree/modular (Much more modular, needs testing & review)
+
 
 > IMPORTANT: if you upgrade your site, existing user account
 > passwords will stop working unless you use --old-passwords
